@@ -1,16 +1,20 @@
 tool_library = ["Spade", "Ladder", "Dutch Hoe", "Rubber Mallet"]
 
-first_tool = tool_library.first()
+def first_tool(tool_array)
+  return tool_array[0]
+end
 
-puts first_tool
+puts first_tool(tool_library)
 
 
 gardener1 = {
   name: "Bob",
-  specialty: "Rose care and maintenance",
+  speciality: "Rose care and maintenance",
   favourite_tool: "Secateurs"
 }
 
-specialty = gardener1[:specialty]
+def speciality(gardener_hash)
+   return gardener_hash[:speciality]
+end
 
-puts "#{gardener1[:name]} is a gardener and his specialty is #{specialty.downcase}."
+puts "Our gardener's speciality is #{speciality(gardener1).downcase}."
